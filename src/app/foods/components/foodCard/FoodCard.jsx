@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 const FoodCard = ({ food }) => {
   const { id, title, foodImg, price, category } = food
@@ -16,7 +17,7 @@ const FoodCard = ({ food }) => {
 
       <div className="flex items-center gap-4">
         <button className="btn bg-amber-400 text-black hover:bg-amber-500">Add to Cart</button>
-        <button className="btn bg-gray-200 text-black hover:bg-gray-300">View Details</button>
+        <Link href={`/foods/${id}`} className="btn bg-gray-200 text-black hover:bg-gray-300">View Details</Link>
       </div>
     </div>
   )
