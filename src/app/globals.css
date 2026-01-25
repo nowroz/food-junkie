@@ -30,5 +30,5 @@ body {
 }
 
 .btn {
-  @apply px-3 py-1 rounded-full font-bold cursor-pointer active:scale-[99%]
+  @apply px-3 py-1 rounded-full font-bold cursor-pointer active:scale-[99%] disabled:cursor-not-allowed
 }
